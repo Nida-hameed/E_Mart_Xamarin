@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E_Mart.Views.Shopkeeper.Add_PRO_CATEGORY"
+             Title="New Category">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+
+            <Image Source="ImagePicker.png" x:Name="PreviewPic"  >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+            <Entry x:Name="txtProCatName" Placeholder="Category Name" Keyboard="Chat"></Entry>
+            <Entry x:Name="txtProCatStatus" Placeholder="Category Status" Keyboard="Chat"></Entry>
+            <Entry x:Name="txtShopFID" Placeholder="Shop Name" Keyboard="Chat"></Entry>
+
+
+
+            <ActivityIndicator x:Name="ProgressInd" IsRunning="False"/>
+            <Button Text="Add Category" x:Name="btnAddCategory" Clicked="btnAddCategory_Clicked" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E_Mart.App">
+    <!--
+        Define global resources and styles here, that apply to all pages in your app.
+    -->
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#ff6f61</Color>
+
+            <ResourceDictionary>
+               <Style TargetType="Button">
+                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="BackgroundColor" Value="{StaticResource Primary}"></Setter>
+                <Setter Property="BorderColor" Value="#efefef"></Setter>
+                <Setter Property="BorderWidth" Value="2"></Setter>
+                <Setter Property="FontSize" Value="Medium"></Setter>
+                <Setter Property="CornerRadius" Value="20"></Setter>
+
+               </Style>
+              
+                <Style TargetType="Entry">
+                   <Setter Property="ClearButtonVisibility" Value="WhileEditing"></Setter>
+                </Style>
+            </ResourceDictionary>   
+        </ResourceDictionary>        
+    </Application.Resources>
+</Application>

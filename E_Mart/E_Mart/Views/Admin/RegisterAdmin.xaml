@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E_Mart.Views.Admin.RegisterAdmin"
+             Title="Add Admin">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <Entry IsTextPredictionEnabled="True" Keyboard="Chat" Placeholder="Name" x:Name="txtName"></Entry>
+            <Entry Keyboard="Email" Placeholder="Email" x:Name="txtEmail"></Entry>
+            <Entry Placeholder="Address" x:Name="txtAddress"></Entry>
+            <Entry Placeholder="CNIC" x:Name="txtCNIC"></Entry>
+            <Entry Keyboard="Numeric" Placeholder="Phone No" x:Name="txtContact"></Entry>
+            <Entry IsPassword="True" Placeholder="Password" x:Name="txtPassword"></Entry>
+            <Entry IsPassword="True" Placeholder="Confirm Password" x:Name="txtCPassword"></Entry>
+            <ActivityIndicator x:Name="ProgressInd" IsRunning="False"/>
+            <Button x:Name="btnRegister" Text="Register"  Margin="0, 5,0,0"  Clicked="btnRegister_Clicked"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

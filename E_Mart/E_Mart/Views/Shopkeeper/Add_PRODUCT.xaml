@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E_Mart.Views.Shopkeeper.Add_PRODUCT">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image Source="ImagePicker.png" x:Name="PreviewPic"  >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                </Image.GestureRecognizers>
+            </Image>
+
+            <Entry x:Name="txtPROName" Placeholder="Category Name" Keyboard="Chat"></Entry>
+            <Entry x:Name="txtPRODescription" Placeholder="Product Description" Keyboard="Chat"></Entry>
+            <Entry x:Name="txtPROSalePrice" Placeholder="Product SalePrice" Keyboard="Chat"></Entry>
+            <Entry x:Name="txtPROPurchasePrice" Placeholder="Product PurchasePrice" Keyboard="Chat"></Entry>
+            <Entry x:Name="txtPROAvailibility" Placeholder="Product Availbility" Keyboard="Chat"></Entry>
+            <Entry x:Name="txtPROCategory" Placeholder="Category Name" Keyboard="Chat"></Entry>
+           
+
+            <ActivityIndicator x:Name="ProgressInd" IsRunning="False"/>
+            <Button Text="Add Product" x:Name="btnAddProduct" Clicked="btnAddProduct_Clicked" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

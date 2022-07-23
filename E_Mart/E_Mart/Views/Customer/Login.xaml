@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E_Mart.Views.Customer.Login"
+             Title="Login">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Back" Clicked="ToolbarItem_Clicked" />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <StackLayout Padding="24,50,24,0">
+            <Image Source="LoginIcon.png"/>
+            <Entry Keyboard="Email" x:Name="txtEmail" Placeholder="Enter Email"></Entry>
+            <Entry IsPassword="True"  x:Name="txtPassword" Placeholder="Enter Password"></Entry>
+            <ActivityIndicator x:Name="ProgressInd" IsRunning="False"/>
+            <Button x:Name="btnLogin" Text="Log in"  Margin="0, 5,0,0" Clicked="btnLogin_Clicked"/>
+
+            <Label Text="Create New Account">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped">
+                    </TapGestureRecognizer>
+                </Label.GestureRecognizers>
+            </Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

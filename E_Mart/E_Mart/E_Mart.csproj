@@ -1,0 +1,115 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirebaseDatabase.net" Version="4.0.7" />
+    <PackageReference Include="FirebaseStorage.net" Version="1.0.3" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+    <PackageReference Include="Xam.Plugin.Media" Version="5.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\Admin\Add_CITY.xaml.cs">
+      <DependentUpon>Add_CITY.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Admin\Add_SHP_CATEGORY.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Add_SHP_CATEGORY.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Admin\Manage_Categories.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Admin\Manage_Cities.xaml.cs">
+      <DependentUpon>Manage_Cities.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Admin\RegisterAdmin.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>RegisterAdmin.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Admin\SHOPKEEPER_List.xaml.cs">
+      <DependentUpon>SHOPKEEPER_List.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Customer\CustomerSideBar.xaml.cs">
+      <DependentUpon>CustomerSideBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Customer\CustomerSideBarFlyout.xaml.cs">
+      <DependentUpon>CustomerSideBarFlyout.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Shopkeeper\Add_SHOP.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>Add_SHOP.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Shopkeeper\ShopkeeperSideBar.xaml.cs">
+      <DependentUpon>ShopkeeperSideBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Shopkeeper\ShopkeeperSideBarFlyout.xaml.cs">
+      <DependentUpon>ShopkeeperSideBarFlyout.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Admin\RegisterShopkeeper.xaml.cs">
+      <DependentUpon>RegisterShopkeeper.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Shopkeeper\Manage_Categories.xaml.cs">
+      <DependentUpon>Manage_Categories.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Shopkeeper\Manage_Products.xaml.cs">
+      <DependentUpon>Manage_Products.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Shopkeeper\Manage_Shop.xaml.cs">
+      <DependentUpon>Manage_Shop.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="StartUpPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Admin\Add_SHP_CATEGORY.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Admin\AdminSideBar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Admin\LoginAdmin.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Admin\RegisterAdmin.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Admin\SHOPKEEPER_List.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Customer\Login.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Customer\Products.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Customer\Register.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Shopkeeper\Add_PRODUCT.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Shopkeeper\Add_SHOP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Shopkeeper\Add_PRO_CATEGORY.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Shopkeeper\LoginShopkeeper.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Shopkeeper\PRO_CATEGORY_DETAIL.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

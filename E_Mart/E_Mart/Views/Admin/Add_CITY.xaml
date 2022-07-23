@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="E_Mart.Views.Admin.Add_CITY"
+             Title="New City">
+    <ContentPage.Content>
+        <StackLayout Padding="24">
+            <Entry x:Name="txtCityName" Placeholder="City Name" Keyboard="Chat"></Entry>
+            <Entry x:Name="txtPostalCode" Placeholder="Postal Code" Keyboard="Numeric"></Entry>
+
+            <ActivityIndicator x:Name="ProgressInd" IsRunning="False"/>
+            <Button Text="Add City" x:Name="btnAddCity" Clicked="btnAddCity_Clicked" ></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
